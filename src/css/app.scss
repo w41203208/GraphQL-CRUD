@@ -1,0 +1,25 @@
+.app {
+  @include flexCenter(row, center, center);
+  height: 100vh;
+  background: #e3eaea;
+  .app-inner {
+    border-radius: 40px;
+    background: #ffffff;
+    box-shadow: 1px 1px 20px -1px rgba(41, 41, 41, 0.1);
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    @include flexCenter(row, center, center);
+    .app-header {
+      height: 100%;
+      flex: 1;
+      border-right: 2px solid #aaaaaa25;
+      padding: 40px 0px 40px 60px;
+    }
+    .app-main {
+      padding: 40px 60px 40px 40px;
+      height: 100%;
+      width: 75%;
+    }
+  }
+}

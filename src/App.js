@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { useQuery } from '@apollo/client';
+import React from 'react';
+import { Route } from 'react-router-dom';
+
+import { Home } from './components/page/home.jsx';
+import { Task } from './components/page/task';
+import { Header } from './components/header/header.jsx';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="app-inner">
+        <header className="app-header">
+          <Header />
+        </header>
+        <main className="app-main">
+          <Route path={'/home'}>
+            <Home />
+          </Route>
+          <Route path={'/task'}>
+            <Task />
+          </Route>
+        </main>
+      </div>
     </div>
   );
 }

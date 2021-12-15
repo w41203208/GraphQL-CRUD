@@ -1,0 +1,21 @@
+@mixin flexCenter($direction, $justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+@mixin mobile {
+  @media (max-width: 375px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: 720px) {
+    @content;
+  }
+}
+@mixin laptop {
+  @media (max-width: 1024px) {
+  }
+}
