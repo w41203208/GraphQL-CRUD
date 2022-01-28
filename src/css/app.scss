@@ -9,6 +9,11 @@
     width: 80%;
     height: 80%;
     margin: auto;
+    @include bigg {
+      width: 100vw;
+      height: 100vh;
+      border-radius: 0px;
+    }
     @include flexCenter(row, center, center);
     .app-header {
       height: 100%;

@@ -46,7 +46,7 @@ export const TodoItem = (props) => {
             <i className="fas fa-edit"></i>
           </div>
           <div className="todo-icon delete" onClick={() => deleteTask()}>
-            <i class="fas fa-times"></i>
+            <i className="fas fa-times"></i>
           </div>
         </div>
       </div>

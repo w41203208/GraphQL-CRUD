@@ -18,3 +18,12 @@ export const ADD_TASK_QUERY = gql`
     }
   }
 `;
+export const GET_ALL_TASK_SUB = gql`
+  subscription GET_ALL_TASK_SUB {
+    todo_list(order_by: { task: asc }) {
+      id
+      task
+      assignee
+    }
+  }
+`;

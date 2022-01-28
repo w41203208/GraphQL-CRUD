@@ -1,5 +1,5 @@
 .task-top {
-  @include flexCenter(row, flex-start, center);
+  @include flexCenter(row, space-between, center);
   margin-bottom: 50px;
   .search-box {
     height: 60px;
@@ -9,6 +9,7 @@
     border-radius: 5px;
     display: flex;
     text-align: center;
+    align-items: center;
     .search-icon {
       text-align: center;
       display: inline-block;
@@ -38,22 +39,25 @@
         }
       }
     }
-  }
-  .send-search {
-    height: 50px;
-    width: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    margin-left: 20px;
-    background: #6de6a9;
-    border-radius: 10px;
-    color: white;
-    text-align: center;
-    cursor: pointer;
-    &:hover {
-      background: #5ce29f;
+    .send-search {
+      height: 50px;
+      width: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px;
+      margin-left: 20px;
+      background: #6de6a9;
+      border-radius: 10px;
+      color: white;
+      text-align: center;
+      cursor: pointer;
+      &:hover {
+        background: #5ce29f;
+      }
     }
   }
+}
+.task-bottom {
+  height: 80%;
 }

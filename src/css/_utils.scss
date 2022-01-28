@@ -17,5 +17,11 @@
 }
 @mixin laptop {
   @media (max-width: 1024px) {
+    @content;
+  }
+}
+@mixin bigg {
+  @media (max-width: 1440px) {
+    @content;
   }
 }
